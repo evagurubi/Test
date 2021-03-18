@@ -1,0 +1,71 @@
+.dark {
+  font-family: "Ranchers", cursive;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #443e3e;
+  color: #e3e4aa;
+}
+.dark .platformcontainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  grid-auto-rows: auto;
+}
+.dark .platformcontainer .platformcard {
+  border: solid 3px #e3e4aa;
+  padding: 20px;
+  width: 20vw;
+}
+.dark .eventcontainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  grid-auto-rows: auto;
+}
+.dark .eventcontainer .eventcard {
+  border: solid 3px #e3e4aa;
+  padding: 20px;
+  width: 20vw;
+}
+
+.light {
+  font-family: "Ranchers", cursive;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e4aa;
+  color: #443e3e;
+}
+.light .platformcontainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  grid-auto-rows: auto;
+}
+.light .platformcontainer .platformcard {
+  border: solid 3px #443e3e;
+  padding: 20px;
+  width: 20vw;
+}
+.light .eventcontainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  grid-auto-rows: auto;
+}
+.light .eventcontainer .eventcard {
+  border: solid 3px #443e3e;
+  padding: 20px;
+  width: 20vw;
+}
+
+/*# sourceMappingURL=App.css.map */

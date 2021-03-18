@@ -1,0 +1,59 @@
+$darkcolor: rgb(68, 62, 62);
+$lightcolor: rgb(227, 228, 170);
+
+@mixin maincontainer($background, $color) {
+  font-family: "Ranchers", cursive;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $background;
+  color: $color;
+}
+
+@mixin containergrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  grid-auto-rows: auto;
+}
+
+@mixin cardlayout($bordercolor) {
+  border: solid 3px $bordercolor;
+  padding: 20px;
+  width: 20vw;
+}
+
+.dark {
+  @include maincontainer($darkcolor, $lightcolor);
+  .platformcontainer {
+    @include containergrid();
+    .platformcard {
+      @include cardlayout($lightcolor);
+    }
+  }
+  .eventcontainer {
+    @include containergrid();
+    .eventcard {
+      @include cardlayout($lightcolor);
+    }
+  }
+}
+
+.light {
+  @include maincontainer($lightcolor, $darkcolor);
+  .platformcontainer {
+    @include containergrid();
+    .platformcard {
+      @include cardlayout($darkcolor);
+    }
+  }
+  .eventcontainer {
+    @include containergrid();
+    .eventcard {
+      @include cardlayout($darkcolor);
+    }
+  }
+}
